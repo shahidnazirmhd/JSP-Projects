@@ -16,6 +16,7 @@
 	<table class="carttable">
 			<thead>
 				<tr>
+					<th scope="col"><%=rb.getString("orderno")%></th>
 					<th scope="col"><%=rb.getString("date")%></th>
 					<th scope="col"><%=rb.getString("name")%></th>
 					<th scope="col"><%=rb.getString("category")%></th>
@@ -27,6 +28,7 @@
 			<tbody>
 		<c:forEach var="product" items="${sessionScope.showorder}">
   <tr>
+  					<td>${product.getOrderID()}</td>
 					<td>${product.getDate()}</td>
 					<td>${product.getName()}</td>
 					<td>${product.getCategory()}</td>
