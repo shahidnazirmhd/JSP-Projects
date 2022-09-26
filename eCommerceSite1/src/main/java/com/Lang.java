@@ -1,8 +1,8 @@
 package com;
 
-import java.io.Serializable;
 
-public class Lang implements Serializable{
+
+public class Lang {
 private String lang="en";
 private static Lang instance;
 public static synchronized Lang getInstance(){
