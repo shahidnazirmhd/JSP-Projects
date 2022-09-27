@@ -23,7 +23,7 @@ public class ServletController extends HttpServlet {
 		}
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session=request.getSession();
-		session.setMaxInactiveInterval(15);
+		session.setMaxInactiveInterval(150);
 			rp.process(request,response);
 	}
 
