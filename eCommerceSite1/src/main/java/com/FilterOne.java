@@ -19,12 +19,6 @@ import javax.servlet.http.HttpSession;
  */
 @WebFilter("*.do")
 public class FilterOne extends HttpFilter implements Filter {
-       
-    
-	public void destroy() {
-		System.out.println("filter destroy called");
-	}
-
 	/**
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
@@ -52,12 +46,16 @@ public class FilterOne extends HttpFilter implements Filter {
 	}
 			
 	}
-
+	
 	/**
 	 * @see Filter#init(FilterConfig)
 	 */
 	public void init(FilterConfig fConfig) throws ServletException {
 		System.out.println("Filter init called");
 	}
+	public void destroy() {
+		System.out.println("filter destroy called");
+	}
+
 
 }

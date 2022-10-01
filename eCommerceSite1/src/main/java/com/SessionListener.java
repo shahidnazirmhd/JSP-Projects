@@ -35,8 +35,7 @@ public class SessionListener implements HttpSessionListener {
         	String upass=(String)o2;
         	DbCon.getInstance().reSetFlag(uname, upass);
         }
-                
-    	System.out.println("session destroyed...");
+        System.out.println("session destroyed...");
     	
     }
 	
